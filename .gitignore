@@ -1,0 +1,12 @@
+
+.classpath
+
+*.apk
+
+*.dex
+
+bin/AndroidManifest.xml
+
+*.class
+
+*.cache

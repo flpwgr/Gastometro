@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="4"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/txtLinhaDesc"
+        android:layout_gravity="left"
+        android:text="Descricao"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+
+    <Space
+        android:layout_column="3"
+        android:layout_gravity="fill_vertical"
+        android:layout_row="1" />
+
+    <TextView
+        android:id="@+id/txtLinhaValor"
+        android:layout_column="2"
+        android:layout_gravity="right|top"
+        android:layout_row="0"
+        android:text="R$10000.00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtLinhaCategoria"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:text="Moradia/Aluguel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/txtLinhaData"
+        android:layout_column="2"
+        android:layout_gravity="right|top"
+        android:layout_row="1"
+        android:text="2013-10-16"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</GridLayout>

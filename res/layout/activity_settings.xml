@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Settings" >
+
+    <Spinner
+        android:id="@+id/spintipo_Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/txtInserirTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spintipo_Settings"
+        android:ems="10"
+        android:hint="Inserir tipo" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnInserirTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtInserirTipo"
+        android:layout_below="@+id/txtInserirTipo"
+        android:onClick="btnInserirTipo"
+        android:text="Inserir" />
+
+    <Button
+        android:id="@+id/btnDeletarTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnInserirTipo"
+        android:layout_alignBottom="@+id/btnInserirTipo"
+        android:layout_alignRight="@+id/txtInserirTipo"
+        android:onClick="deletarTipo"
+        android:text="Deletar" />
+    
+	<!--  quebra de linha -->
+	
+    <Spinner
+        android:id="@+id/spinsubtipo_Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnInserirTipo" />
+
+    <EditText
+        android:id="@+id/txtInserirSubTipo"
+        android:hint="subtipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinsubtipo_Settings"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnInserirSubTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtInserirSubTipo"
+        android:onClick="btnInserirSubTipo"
+        android:text="Inserir" />
+
+    <Button
+        android:id="@+id/btnDeletarSubTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnInserirSubTipo"
+        android:layout_alignBottom="@+id/btnInserirSubTipo"
+        android:layout_alignRight="@+id/txtInserirSubTipo"
+        android:onClick="deletarSubTipo"
+        android:text="Deletar" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="fecharJanela"
+        android:text="Fechar" />
+
+</RelativeLayout>
